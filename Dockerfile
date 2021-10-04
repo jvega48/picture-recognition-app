@@ -23,7 +23,7 @@ COPY --from=builder /opt/web/build /usr/share/nginx/html
 FROM python:3.8-slim-buster
 
 COPY requirements.txt .
-RUN pip3 install -r requirements.txt
+RUN pip3 install --no-cache-dir requirements.txt
 
 WORKDIR /app
 COPY . /app 
