@@ -35,7 +35,8 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/image-processing-app:latest
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/image-processing-frontend:latest
+          # tags: ${{ secrets.DOCKER_HUB_USERNAME }}/image-processing-frontend:latest
+
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
