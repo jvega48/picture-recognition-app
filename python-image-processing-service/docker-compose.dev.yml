@@ -7,11 +7,7 @@ services:
   - 5000:5000
   volumes:
   - ./:/app
-  
-  frontend:
-    build: frontend
-    ports: 
-      - 8080:80
+ 
  mysqldb:
   image: mysql
   ports:
