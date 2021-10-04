@@ -3,6 +3,7 @@ from flask import Flask
 import logging
 import mysql.connector
 import json
+import flask_cors
 
 server = Flask(__name__)
 
