@@ -7,7 +7,7 @@ services:
   - 5000:5000
   volumes:
   - ./:/app
-
+ 
  mysqldb:
   image: mysql
   ports:
