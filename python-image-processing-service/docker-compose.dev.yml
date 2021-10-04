@@ -2,10 +2,7 @@ version: '3.8'
 
 services:
  web:
-  build:
-   context: ./
-   dockerfile: .docker/nginx/Dockerfile
-   
+  build: app
   ports:
   - 5000:5000
   volumes:
